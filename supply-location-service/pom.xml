@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
-    <artifactId>running-location-service</artifactId>
+    <groupId>com.gavin</groupId>
+    <artifactId>supply-location-service</artifactId>
     <version>1.0.0.BUILD-SNAPSHOT</version>
 
-    <name>running-location-service</name>
+    <name>supply-location-service</name>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -23,28 +23,16 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-        </dependency>
-        <!--hal interface-->
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-rest-hal-browser</artifactId>
         </dependency>
-        <!--expose repository-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-rest</artifactId>
         </dependency>
-
-        <!--getter setter-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -52,7 +40,6 @@
         </dependency>
     </dependencies>
 
-    <!--wrap up into jar file-->
     <build>
         <plugins>
             <plugin>
@@ -61,5 +48,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
