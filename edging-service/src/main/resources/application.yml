@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: edging-service
+#when post to 8080, route to port 9000
+zuul:
+  routes:
+    running-location-service:
+      path: /running-location-service/**
+      url: http://localhost:9000

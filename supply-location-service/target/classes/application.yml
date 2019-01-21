@@ -1,0 +1,6 @@
+server:
+  port: 9001
+#  id for the service to be found(global)
+spring:
+  application:
+    name: supply-location-service

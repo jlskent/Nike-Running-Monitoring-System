@@ -1,0 +1,14 @@
+server:
+  port: 9005
+spring:
+  application:
+    name: running-location-simulator
+
+#distribution port
+#->private String runningLocationDistribution;
+
+com:
+  example:
+    running:
+      location:
+        distribution: http://location:9006
